@@ -2,6 +2,7 @@ import { StatusBar } from "expo-status-bar";
 import { Image, Text, TouchableOpacity, View } from "react-native";
 import Card from "./src/components/Card";
 import { FontAwesome5 } from "@expo/vector-icons";
+import Person from "./src/components/Person";
 
 export default function App() {
   return (
@@ -70,10 +71,23 @@ export default function App() {
       {/* Recent transactions */}
       <View>
         <View className="flex-row justify-between">
-          <Text className="text-gray-400 font-semibold text-base">
-            Recent transactions
-          </Text>
-          <Text className="text-gray-400 font-semibold text-base">See all</Text>
+          <TouchableOpacity>
+            <Text className="text-gray-400 font-semibold text-base">
+              Recent transactions
+            </Text>
+          </TouchableOpacity>
+          <TouchableOpacity>
+            <Text className="text-gray-400 font-semibold text-base">
+              See all
+            </Text>
+          </TouchableOpacity>
+        </View>
+
+        {/* People */}
+        <View className="pt-2">
+          <Person />
+          <Person />
+          <Person />
         </View>
       </View>
     </View>
