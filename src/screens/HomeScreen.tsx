@@ -3,13 +3,10 @@ import React from "react";
 import Person from "../components/Person";
 import Card from "../components/Card";
 import { FontAwesome5 } from "@expo/vector-icons";
-import { StatusBar } from "expo-status-bar";
 
 const HomeScreen = () => {
   return (
     <View className="flex-1 bg-slate-900 p-8 pt-12 gap-2">
-      <StatusBar style="auto" />
-
       {/* Account details */}
       <View className="flex gap-6">
         {/* Avatar */}

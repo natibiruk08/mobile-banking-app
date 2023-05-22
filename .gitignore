@@ -1,7 +1,7 @@
-node_modules/
-.expo/
-.yarn/
-dist/
+/node_modules/
+/.expo
+/.yarn
+/dist
 npm-debug.*
 *.jks
 *.p8
